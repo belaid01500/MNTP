@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,100&display=swap");
+
+:root {
+  --primary-1: #0b1d26;
+  --primary-2: #fbd784;
+  --primary-3: #fff;
+}
+body {
+  position: relative;
+}
+body {
+  background-image: url("images/banniere.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 -700px;
+  background-color: var(--primary-1);
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+  z-index: -1;
+}
+/************************** Header **********************/
+
+header {
+  padding: 0 5%;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+}
+nav {
+  gap: 50px;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-3);
+}
+h1 {
+  font-size: 3.5rem;
+  color: var(--primary-3);
+}
+h2 {
+  font-size: 3rem;
+  color: var(--primary-3);
+}
+h3 {
+  color: var(--primary-2);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+}
+p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-3);
+}
+
+.justifycontent {
+  justify-content: center;
+}
+.gap {
+  gap: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.paddings {
+  padding: 5% 15%;
+}
+.alignitems {
+  align-items: center;
+}
+
+/************************** Hero et aside **************/
+.left {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.left p {
+  writing-mode: vertical-lr;
+}
+.right {
+  position: fixed;
+  top: 25%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-right: 2px solid white;
+}
+.hero {
+  height: 130vh;
+  width: 100%;
+}
+.slogan {
+  padding: 5% 35% 0 35%;
+}
+.slogan h3 {
+  margin-bottom: 40px;
+  opacity: 40%;
+}
+.slogan h1 {
+  margin-bottom: 40px;
+}
+/****************** GET STARTED et UNDERSTAND YOUR MAP ******************/
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  width: 100%;
+}
+.card img {
+  width: 25%;
+}
+.card-content {
+  width: 40%;
+}
+.card-content a {
+  color: var(--primary-2);
+}
+.card-content p {
+  width: 80%;
+}
+.number {
+  position: relative;
+  margin: 0;
+  left: -90px;
+  top: 90px;
+  font-size: 10rem;
+  color: var(--primary-3);
+  opacity: 20%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+/************************ HIKING ESSENTIALS ********************/
+.card2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.card2 img {
+  width: 25%;
+}
+
+/******************************* footer ************************/
+.footer-main p {
+  margin-bottom: 60px;
+}
+.footer-main a {
+  color: var(--primary-3);
+  opacity: 40%;
+}
+.container-colonne {
+  gap: 100px;
+}
+.left-colonne {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-colonne h4 {
+  font-size: 1.5rem;
+  color: var(--primary-2);
+  font-family: "Josefin Sans", sans-serif;
+}
+.right-colonne {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-colonne h4 {
+  font-size: 1.5rem;
+  color: var(--primary-2);
+  font-family: "Josefin Sans", sans-serif;
+}
